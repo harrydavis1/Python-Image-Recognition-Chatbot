@@ -1,0 +1,152 @@
+Lift (Squat)
+
+Lift (Bench)
+
+Lift (Deadlift)
+
+-Lift (Legs)
+
+-Lift (Back)
+
+-Lift (Chest)
+
+"Increases (x, y) & Lift (y) -> Compound (x)"
+
+"Increases (y, z) & Compound (z) -> Accessory (y)"
+
+"Increases (TricepPushdown, OHP)"
+
+"Increases (BarbellRow, Pullups)"
+
+"Increases (Lunges, FrontSquats)"
+
+"Increases (OHP, Bench)"
+
+"Increases (PullUps, Deadlift)"
+
+"Increases (FrontSquats, Squat)"
+
+"Increases (SumoDeads, Deadlift)"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Accessory(PressUps)
+
+
+
+
+
+
+
+Lift(Snatch)
+
+
+
+
+
+
+
+British(Harry)
+
+
+
+British(Harry)
+
+
+
+
+
+
+
+Accessory(Pressups)
+
+Movement(ChestPress)
+gym(harry)
+compound(Lunges)
+Compound(Lunges)

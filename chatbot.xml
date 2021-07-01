@@ -1,0 +1,88 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+<!-- Greetings and Politeness -->
+<category>
+  <pattern> HELLO </pattern>
+  <template>
+    <random>
+      <li>Hello! How are you</li>
+      <li>Hey friend! wanna chat about powerlifting?</li>
+      <li>Hey buddy! How can I help with powerlifting?</li>
+    </random>
+   </template> </category>
+
+<category> <pattern> HELLO * </pattern>
+  <template>HELLO! How are you?</template> </category>
+
+<category> <pattern> HI </pattern>
+  <template><srai>HELLO! How are you?</srai></template> </category>
+
+<category> <pattern> HI * </pattern>
+  <template><srai>HELLO! How are you?</srai></template> </category>
+
+<category> <pattern> HOW ARE YOU </pattern>
+  <template>I'm good! how are you?</template></category>
+
+<category><pattern> I AM GOOD </pattern>
+  <template>That's good to know. What would you like to discuss regarding powerlifting?</template></category>
+
+<category> <pattern> I NEED HELP </pattern>
+  <template>What would you like to know about powerlifting?</template> </category>
+
+<category><pattern> BYE </pattern>
+  <template>#0$Bye! Nice talking to you. You take care now.</template></category>
+
+<category><pattern> GOODBYE </pattern>
+  <template><srai>BYE</srai></template></category>
+
+<category><pattern> EXIT </pattern>
+  <template><srai>BYE</srai></template></category>
+
+<category> <pattern> THANKS </pattern>
+  <template>You are welcome.</template></category>
+
+<category> <pattern> THANK YOU </pattern>
+  <template><srai>THANKS</srai></template></category>
+
+<category> <pattern> CHEERS </pattern>
+  <template>Sure mate.</template></category>
+
+<category> <pattern> CHEERS * </pattern>
+  <template>Sure mate.</template></category>
+  
+<category><pattern>JOIN</pattern>
+<template>What is your name?</template></category>  
+
+<category>
+  <pattern>HI MY NAME IS *</pattern>
+  <template>Hi <set name = "username"><star /></set></template>
+</category>
+
+<category>
+  <pattern>WHAT IS MY NAME</pattern>
+  <template>your name is <get name = "username"/></template>
+</category>
+
+<category>
+  <pattern>DO YOU GET MY NAME</pattern>
+  <template>Yes! your name is <get name = "username"/></template>
+</category>
+
+<!-- Logic input -->
+<category><pattern> I KNOW THAT * IS *</pattern>
+  <template>#31$<star index="1"/> is <star index="2"/></template></category>
+
+<category><pattern> CHECK IF * IS *</pattern>
+  <template>#32$<star index="1"/> is <star index="2"/></template></category>
+
+<category><pattern> I DONT THINK THAT * IS *</pattern>
+  <template>#33$<star index="1"/> is <star index="2"/></template></category>
+  
+<category><pattern> MY NAME IS *</pattern>
+  <template>#34$<star index="1"/></template></category>  
+
+<!-- Default reaction -->
+<category><pattern> * </pattern>
+  <template>I did not get that, please try again.</template></category>
+
+</aiml>
